@@ -117,7 +117,7 @@ var path = require('path');
 app.get('/file.html', function (req, res){
   res.setHeader("Content-Type", "text/html");
   function render(data){
-    renderFile(res, 'file.html', data);
+    renderFile(res, 'src/file.html', data);
   }
   var file = req.query.file;
   if (file === undefined){
